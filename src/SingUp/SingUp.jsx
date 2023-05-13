@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import img from "./../assets/images/login/login.svg"
 import { useContext } from 'react';
 import { AuthContext } from '../Providers/AuthProvider';
+import SocialLogin from '../shared/SocialLogin/SocialLogin';
 
 const SingUp = () => {
  const {createUser} = useContext(AuthContext)
@@ -59,6 +60,7 @@ const SingUp = () => {
               </div>
            </form>
            <p className='my-4 text-center'>Alrady Have an account <Link className='text-orange-600' to="/login">Login</Link></p>
+           <SocialLogin></SocialLogin>
             </div>
           </div>
         </div>
